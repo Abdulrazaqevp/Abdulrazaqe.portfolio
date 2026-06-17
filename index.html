@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abdul Razaqe Vallippadan | Cybersecurity &amp; Web Developer</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Portfolio of Abdul Razaqe Vallippadan, a BCA student specializing in Cybersecurity, Ethical Hacking, and Full-Stack Web Development.">
+  <meta name="keywords" content="Portfolio, Cybersecurity, Ethical Hacking, Web Developer, Python, Java, OWASP ZAP, Metasploit">
+  <meta name="author" content="Abdul Razaqe Vallippadan">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Icon Font (IonIcons) -->
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+  <!-- Theme and Styling Sheets -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/terminal.css">
+</head>
+<body>
+
+  <!-- Dynamic Particle Canvas -->
+  <canvas id="particle-canvas"></canvas>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar" id="navbar">
+    <div class="container navbar-container">
+      <a href="#" class="logo" id="logo-link">
+        <span>&lt;</span>Abdul.R<span>/&gt;</span>
+      </a>
+      
+      <ul class="nav-links" id="navbar-links">
+        <li><a href="#about" class="nav-link" id="link-about">About</a></li>
+        <li><a href="#skills" class="nav-link" id="link-skills">Skills</a></li>
+        <li><a href="#projects" class="nav-link" id="link-projects">Projects</a></li>
+        <li><a href="#terminal" class="nav-link" id="link-terminal">CLI Console</a></li>
+        <li><a href="#contact" class="nav-link" id="link-contact">Contact</a></li>
+        <li>
+          <!-- Theme Toggle Component -->
+          <div class="theme-selector" id="theme-menu">
+            <button class="theme-btn active" data-theme="slate" title="Slate Theme" id="btn-theme-slate">
+              <ion-icon name="moon-outline"></ion-icon>
+            </button>
+            <button class="theme-btn" data-theme="cyberpunk" title="Cyberpunk Theme" id="btn-theme-cyber">
+              <ion-icon name="flash-outline"></ion-icon>
+            </button>
+            <button class="theme-btn" data-theme="light" title="Minimal Light Theme" id="btn-theme-light">
+              <ion-icon name="sunny-outline"></ion-icon>
+            </button>
+          </div>
+        </li>
+      </ul>
+      
+      <!-- Hamburger Menu (Mobile) -->
+      <div class="menu-btn" id="mobile-nav-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero" class="container">
+    <div class="hero-content">
+      <div class="hero-text">
+        <span class="hero-subtitle">SYSTEM STATE: ONLINE</span>
+        <h1 class="hero-title">Securing Systems &amp; Building <span class="gradient-text">Web Experiences</span></h1>
+        <p class="hero-desc">I am Abdul Razaqe Vallippadan, a BCA student with strong skills in Cybersecurity, Network Analysis, and Web Development. Proficient in Java, Python, and SQL with hands-on experience in ethical hacking tools like Metasploit and OWASP ZAP.</p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary" id="hero-btn-projects">
+            <span>View Projects</span>
+            <ion-icon name="arrow-forward-outline"></ion-icon>
+          </a>
+          <a href="#contact" class="btn btn-secondary" id="hero-btn-contact">Get in Touch</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="avatar-wrapper">
+          <img src="assets/avatar-sample.png" alt="Abdul Razaqe Avatar Image" class="avatar-image" id="avatar-img">
+          <div class="avatar-glow"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="container">
+    <div class="section-header">
+      <span class="section-tag">01 // Profile</span>
+      <h2 class="section-title">The Engineering Mindset</h2>
+    </div>
+    
+    <div class="skills-grid">
+      <div class="glass-panel skill-category" id="about-card-perf">
+        <div class="skill-category-title">
+          <ion-icon name="shield-checkmark-outline"></ion-icon>
+          <h3>Cybersecurity</h3>
+        </div>
+        <p>Passionate about securing systems. Hands-on experience with vulnerability assessments, threat analysis, penetration testing using Metasploit, and web application security testing with OWASP ZAP.</p>
+      </div>
+      
+      <div class="glass-panel skill-category" id="about-card-clean">
+        <div class="skill-category-title">
+          <ion-icon name="code-working-outline"></ion-icon>
+          <h3>Web Development</h3>
+        </div>
+        <p>Full-stack web development experience with React, Node.js, Express.js, and MongoDB. Skilled in building responsive layouts, debugging web applications, and creating ATS-optimized tools.</p>
+      </div>
+      
+      <div class="glass-panel skill-category" id="about-card-design">
+        <div class="skill-category-title">
+          <ion-icon name="school-outline"></ion-icon>
+          <h3>Education &amp; Certifications</h3>
+        </div>
+        <p>BCA in Cyber Security, Ethical Hacking &amp; Cloud Computing at Yenepoya University, Bangalore. Certified in Cybersecurity Attack &amp; Defense (EC Council), OWASP ZAP, Metasploit, and Network Traffic Analysis via Coursera.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="container">
+    <div class="section-header">
+      <span class="section-tag">02 // Capabilities</span>
+      <h2 class="section-title">Technical Expertise</h2>
+    </div>
+    
+    <div class="skills-grid">
+      <!-- Programming Languages -->
+      <div class="glass-panel skill-category" id="skills-cat-frontend">
+        <div class="skill-category-title">
+          <ion-icon name="code-slash-outline"></ion-icon>
+          <h3>Programming Languages</h3>
+        </div>
+        <div class="skill-list">
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name">Python</span>
+              <span class="skill-percentage">85%</span>
+            </div>
+            <div class="skill-progress-bar">
+              <div class="skill-progress-fill" data-value="85" id="skill-python"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name">Java &amp; C++</span>
+              <span class="skill-percentage">75%</span>
+            </div>
+            <div class="skill-progress-bar">
+              <div class="skill-progress-fill" data-value="75" id="skill-java"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name">HTML, CSS &amp; JavaScript</span>
+              <span class="skill-percentage">80%</span>
+            </div>
+            <div class="skill-progress-bar">
+              <div class="skill-progress-fill" data-value="80" id="skill-web"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name">SQL</span>
+              <span class="skill-percentage">75%</span>
+            </div>
+            <div class="skill-progress-bar">
+              <div class="skill-progress-fill" data-value="75" id="skill-sql"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Security & Tools -->
+      <div class="glass-panel skill-category" id="skills-cat-backend">
+        <div class="skill-category-title">
+          <ion-icon name="lock-closed-outline"></ion-icon>
+          <h3>Security &amp; Tools</h3>
+        </div>
+        <div class="skill-list">
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name">Metasploit &amp; Kali Linux</span>
+              <span class="skill-percentage">80%</span>
+            </div>
+            <div class="skill-progress-bar">
+              <div class="skill-progress-fill" data-value="80" id="skill-metasploit"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name">OWASP ZAP</span>
+              <span class="skill-percentage">75%</span>
+            </div>
+            <div class="skill-progress-bar">
+              <div class="skill-progress-fill" data-value="75" id="skill-owasp"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name">React, Node.js &amp; MongoDB</span>
+              <span class="skill-percentage">70%</span>
+            </div>
+            <div class="skill-progress-bar">
+              <div class="skill-progress-fill" data-value="70" id="skill-react"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name">Windows &amp; Linux</span>
+              <span class="skill-percentage">75%</span>
+            </div>
+            <div class="skill-progress-bar">
+              <div class="skill-progress-fill" data-value="75" id="skill-os"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Grid Section -->
+  <section id="projects" class="container">
+    <div class="section-header">
+      <span class="section-tag">03 // Highlights</span>
+      <h2 class="section-title">Selected Projects</h2>
+    </div>
+    
+    <!-- Filter Category Tabs -->
+    <div class="projects-filter" id="filter-tabs">
+      <button class="filter-btn active" data-filter="all" id="filter-all">All Projects</button>
+      <button class="filter-btn" data-filter="web" id="filter-web">Web Apps</button>
+      <button class="filter-btn" data-filter="system" id="filter-system">Hardware / IoT</button>
+    </div>
+    
+    <!-- Cards Grid -->
+    <div class="projects-grid" id="project-cards-grid">
+      <!-- Card 1: RFID Access Control -->
+      <div class="glass-panel project-card" data-category="system" id="proj-card-rfid">
+        <div class="project-image-container">
+          <img src="assets/project1-sample.svg" alt="RFID Access Control System" class="project-image">
+          <div class="project-overlay">
+            <a href="#" class="project-overlay-link" title="Live Demo" id="demo-link-1">
+              <ion-icon name="open-outline"></ion-icon>
+            </a>
+            <a href="#" class="project-overlay-link" title="Code Repository" id="code-link-1">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </div>
+        </div>
+        <div class="project-body">
+          <h3 class="project-title">RFID Access Control System</h3>
+          <p class="project-desc">An RFID-based access control system with real-time entry/exit logging and database-backed user authentication for secure environments.</p>
+          <div class="project-tags">
+            <span class="project-tag">RFID</span>
+            <span class="project-tag">Database</span>
+            <span class="project-tag">IoT</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2: Smart Resume Builder -->
+      <div class="glass-panel project-card" data-category="web" id="proj-card-resume">
+        <div class="project-image-container">
+          <img src="assets/project2-sample.svg" alt="Smart Resume Builder Web Application" class="project-image">
+          <div class="project-overlay">
+            <a href="#" class="project-overlay-link" title="Live Demo" id="demo-link-2">
+              <ion-icon name="open-outline"></ion-icon>
+            </a>
+            <a href="#" class="project-overlay-link" title="Code Repository" id="code-link-2">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </div>
+        </div>
+        <div class="project-body">
+          <h3 class="project-title">Smart Resume Builder</h3>
+          <p class="project-desc">A full-stack web application for creating ATS-optimized resumes with multiple templates, section customization, and PDF/DOCX export functionality.</p>
+          <div class="project-tags">
+            <span class="project-tag">React</span>
+            <span class="project-tag">Node.js</span>
+            <span class="project-tag">MongoDB</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3: Cybersecurity Dashboard -->
+      <div class="glass-panel project-card" data-category="web" id="proj-card-dashboard">
+        <div class="project-image-container">
+          <img src="assets/project3-sample.svg" alt="Cybersecurity Dashboard Interface" class="project-image">
+          <div class="project-overlay">
+            <a href="#" class="project-overlay-link" title="Live Demo" id="demo-link-3">
+              <ion-icon name="open-outline"></ion-icon>
+            </a>
+            <a href="#" class="project-overlay-link" title="Code Repository" id="code-link-3">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </div>
+        </div>
+        <div class="project-body">
+          <h3 class="project-title">Cybersecurity Dashboard</h3>
+          <p class="project-desc">A sample security operations dashboard showing threat alerts, vulnerability scanning results, and incident response metrics in a polished UI.</p>
+          <div class="project-tags">
+            <span class="project-tag">Security</span>
+            <span class="project-tag">Dashboard</span>
+            <span class="project-tag">Analytics</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 4: Network Audit Toolkit -->
+      <div class="glass-panel project-card" data-category="system" id="proj-card-audit">
+        <div class="project-image-container">
+          <img src="assets/project4-sample.svg" alt="Network Audit Toolkit" class="project-image">
+          <div class="project-overlay">
+            <a href="#" class="project-overlay-link" title="Live Demo" id="demo-link-4">
+              <ion-icon name="open-outline"></ion-icon>
+            </a>
+            <a href="#" class="project-overlay-link" title="Code Repository" id="code-link-4">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </div>
+        </div>
+        <div class="project-body">
+          <h3 class="project-title">Network Audit Toolkit</h3>
+          <p class="project-desc">A curated toolkit interface for network auditing, showing scan results, topology maps, and vulnerability checks in a clean dashboard layout.</p>
+          <div class="project-tags">
+            <span class="project-tag">Networking</span>
+            <span class="project-tag">Auditing</span>
+            <span class="project-tag">Tools</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Terminal Sandbox Section -->
+  <section id="terminal" class="container terminal-section">
+    <div class="section-header">
+      <span class="section-tag">04 // Sandbox Terminal</span>
+      <h2 class="section-title">Command Line Interface</h2>
+    </div>
+    
+    <div class="terminal-window" id="terminal-emulator">
+      <div class="terminal-header" id="terminal-drag-handle">
+        <div class="terminal-controls">
+          <span class="terminal-dot dot-close"></span>
+          <span class="terminal-dot dot-minimize"></span>
+          <span class="terminal-dot dot-maximize"></span>
+        </div>
+        <div class="terminal-title">visitor@abdulrazaqe:~</div>
+        <div class="terminal-status">ONLINE</div>
+      </div>
+      
+      <div class="terminal-body" id="console-body">
+        <div class="terminal-output" id="console-output">
+          <div class="terminal-welcome">Abdul.R Web Shell v1.0.0 - System Initialized.
+Type "help" to view available terminal interactions.</div>
+        </div>
+        <div class="terminal-input-container">
+          <span class="terminal-prompt">visitor@abdulrazaqe:~$</span>
+          <span class="terminal-prompt-arrow">></span>
+          <form class="terminal-input-form" id="cli-form">
+            <input type="text" class="terminal-input" autocomplete="off" spellcheck="false" id="cli-input" autofocus>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Form Section -->
+  <section id="contact" class="container">
+    <div class="section-header">
+      <span class="section-tag">05 // Inquiries</span>
+      <h2 class="section-title">Secure a Consultation</h2>
+    </div>
+    
+    <div class="contact-container">
+      <div class="contact-info">
+        <p class="contact-info-text">Looking for a cybersecurity-focused developer or need a full-stack web application? Feel free to reach out through any of these channels.</p>
+        
+        <div class="contact-item" id="info-location">
+          <div class="contact-icon">
+            <ion-icon name="location-outline"></ion-icon>
+          </div>
+          <div class="contact-detail">
+            <h4>Location</h4>
+            <p>Bangalore, India</p>
+          </div>
+        </div>
+
+        <div class="contact-item" id="info-email">
+          <div class="contact-icon">
+            <ion-icon name="mail-outline"></ion-icon>
+          </div>
+          <div class="contact-detail">
+            <h4>Direct Channel</h4>
+            <p>abdulrazaqevp@gmail.com</p>
+          </div>
+        </div>
+
+        <div class="contact-item" id="info-phone">
+          <div class="contact-icon">
+            <ion-icon name="call-outline"></ion-icon>
+          </div>
+          <div class="contact-detail">
+            <h4>Phone</h4>
+            <p>+91 9946219247</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Glassmorphic Input Form -->
+      <form class="glass-panel contact-form" id="contact-form" action="https://formspree.io/f/mgobbwag" method="POST" data-formspree="true">
+        <input type="hidden" name="_subject" value="New portfolio message from website">
+        <div class="form-group">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" class="form-input" name="name" placeholder="e.g. Jean Doe" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Return Channel (Email)</label>
+          <input type="email" id="email" class="form-input" name="_replyto" placeholder="e.g. jean@example.com" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Transmission Message</label>
+          <textarea id="message" class="form-input" name="message" placeholder="Outline your project scope, timeline, and goals..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" id="form-submit-btn">
+          <span>Send Transmission</span>
+          <ion-icon name="send-outline"></ion-icon>
+        </button>
+        <div class="form-feedback" id="form-feedback-status"></div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="container footer-content">
+      <p>&copy; 2026 Abdul Razaqe Vallippadan. All systems nominal.</p>
+      <div class="social-links" id="footer-socials">
+        <a href="#" class="social-link" title="GitHub" id="social-git">
+          <ion-icon name="logo-github"></ion-icon>
+        </a>
+        <a href="#" class="social-link" title="LinkedIn" id="social-link">
+          <ion-icon name="logo-linkedin"></ion-icon>
+        </a>
+        <a href="#" class="social-link" title="Twitter" id="social-twit">
+          <ion-icon name="logo-twitter"></ion-icon>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Code Scripts -->
+  <script src="js/theme.js"></script>
+  <script src="js/terminal.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

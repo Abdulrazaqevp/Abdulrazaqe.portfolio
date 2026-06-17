@@ -1,0 +1,80 @@
+/* variables.css */
+
+:root {
+  /* Font Families */
+  --font-sans: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  --font-mono: 'Fira Code', 'Courier New', Courier, monospace;
+
+  /* Layout & Spacing */
+  --header-height: 80px;
+  --container-width: 1200px;
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  
+  /* Transitions */
+  --transition-fast: 0.2s ease;
+  --transition-normal: 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  --transition-slow: 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+
+  /* Default Slate Theme */
+  --bg-color: #0b0f19;
+  --bg-card: rgba(22, 28, 45, 0.65);
+  --bg-card-hover: rgba(28, 36, 58, 0.8);
+  --text-primary: #f8fafc;
+  --text-secondary: #94a3b8;
+  --text-muted: #64748b;
+  --primary: #06b6d4;      /* Cyan */
+  --primary-glow: rgba(6, 182, 212, 0.15);
+  --secondary: #3b82f6;    /* Blue */
+  --secondary-glow: rgba(59, 130, 246, 0.15);
+  --accent: #10b981;       /* Emerald */
+  --border-color: rgba(255, 255, 255, 0.08);
+  --border-focus: rgba(6, 182, 212, 0.5);
+  --shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-md: 0 10px 15px -3px rgba(0, 0, 0, 0.3), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --shadow-glow: 0 0 20px rgba(6, 182, 212, 0.35);
+  --glass-blur: blur(16px);
+}
+
+/* Cyberpunk Theme */
+[data-theme="cyberpunk"] {
+  --bg-color: #05050a;
+  --bg-card: rgba(13, 10, 28, 0.7);
+  --bg-card-hover: rgba(22, 17, 48, 0.85);
+  --text-primary: #00ffcc;
+  --text-secondary: #ff007f;
+  --text-muted: #a000ff;
+  --primary: #ff007f;      /* Neon Pink */
+  --primary-glow: rgba(255, 0, 127, 0.25);
+  --secondary: #00ffcc;    /* Neon Teal */
+  --secondary-glow: rgba(0, 255, 204, 0.25);
+  --accent: #bc3bf0;       /* Neon Purple */
+  --border-color: rgba(255, 0, 127, 0.15);
+  --border-focus: #00ffcc;
+  --shadow-sm: 0 0 10px rgba(255, 0, 127, 0.2);
+  --shadow-md: 0 0 20px rgba(255, 0, 127, 0.3), 0 0 40px rgba(0, 255, 204, 0.1);
+  --shadow-glow: 0 0 25px rgba(255, 0, 127, 0.5);
+  --glass-blur: blur(12px);
+}
+
+/* Minimalist Light Theme */
+[data-theme="light"] {
+  --bg-color: #f7f9fc;
+  --bg-card: rgba(255, 255, 255, 0.75);
+  --bg-card-hover: rgba(255, 255, 255, 0.95);
+  --text-primary: #0f172a;
+  --text-secondary: #475569;
+  --text-muted: #94a3b8;
+  --primary: #f97316;      /* Coral Orange */
+  --primary-glow: rgba(249, 115, 22, 0.1);
+  --secondary: #6366f1;    /* Indigo */
+  --secondary-glow: rgba(99, 102, 241, 0.1);
+  --accent: #8b5cf6;       /* Violet */
+  --border-color: rgba(15, 23, 42, 0.06);
+  --border-focus: rgba(249, 115, 22, 0.4);
+  --shadow-sm: 0 1px 3px 0 rgba(0, 0, 0, 0.05), 0 1px 2px 0 rgba(0, 0, 0, 0.03);
+  --shadow-md: 0 10px 25px -5px rgba(15, 23, 42, 0.05), 0 8px 10px -6px rgba(15, 23, 42, 0.05);
+  --shadow-glow: 0 10px 20px rgba(249, 115, 22, 0.15);
+  --glass-blur: blur(20px);
+}

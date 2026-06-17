@@ -1,0 +1,230 @@
+/* terminal.css */
+
+.terminal-section {
+  position: relative;
+  overflow: hidden;
+}
+
+.terminal-window {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  border: 1px solid var(--border-color);
+  background-color: #05070f;
+  display: flex;
+  flex-direction: column;
+  height: 480px;
+  transition: border-color var(--transition-normal);
+}
+
+[data-theme="cyberpunk"] .terminal-window {
+  border-color: var(--primary);
+  box-shadow: 0 0 15px rgba(255, 0, 127, 0.2);
+}
+
+/* Terminal Header */
+.terminal-header {
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.03);
+  border-bottom: 1px solid var(--border-color);
+  padding: 0 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  user-select: none;
+}
+
+.terminal-controls {
+  display: flex;
+  gap: 8px;
+}
+
+.terminal-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.dot-close { background-color: #ff5f56; }
+.dot-minimize { background-color: #ffbd2e; }
+.dot-maximize { background-color: #27c93f; }
+
+.terminal-title {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+.terminal-status {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+/* Terminal Body */
+.terminal-body {
+  flex-grow: 1;
+  padding: 24px;
+  overflow-y: auto;
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  color: #a5b4fc;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  line-height: 1.5;
+}
+
+.terminal-output {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.terminal-welcome {
+  color: var(--primary);
+  white-space: pre-wrap;
+  margin-bottom: 12px;
+}
+
+.terminal-line {
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+}
+
+.terminal-line.command-line {
+  color: var(--text-primary);
+}
+
+.terminal-prompt {
+  color: #a855f7; /* Purple user symbol */
+  white-space: nowrap;
+}
+
+[data-theme="cyberpunk"] .terminal-prompt {
+  color: var(--secondary);
+}
+
+.terminal-prompt-arrow {
+  color: var(--primary);
+  margin-right: 4px;
+}
+
+.terminal-response {
+  padding-left: 20px;
+  color: var(--text-secondary);
+  white-space: pre-wrap;
+}
+
+.terminal-response.error {
+  color: #ef4444;
+}
+
+.terminal-response.success {
+  color: var(--accent);
+}
+
+/* Interactive Input Line */
+.terminal-input-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 4px;
+}
+
+.terminal-input-form {
+  display: flex;
+  flex-grow: 1;
+}
+
+.terminal-input {
+  flex-grow: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  color: var(--text-primary);
+  padding: 0;
+}
+
+/* Draggable overlay style when used as float (if we decide to add toggle) */
+.terminal-window.floating {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  width: 450px;
+  height: 350px;
+  z-index: 1000;
+  display: none; /* Can be toggled with a FAB */
+}
+
+@media (max-width: 768px) {
+  .terminal-window {
+    height: 380px;
+  }
+  
+  .terminal-body {
+    padding: 16px;
+    font-size: 0.8rem;
+  }
+}
+
+/* Light Theme Terminal Overrides */
+[data-theme="light"] .terminal-window {
+  background-color: #ffffff;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+[data-theme="light"] .terminal-body {
+  color: #1e293b;
+  background-color: #ffffff;
+}
+
+[data-theme="light"] .terminal-welcome {
+  color: #f97316;
+}
+
+[data-theme="light"] .terminal-prompt {
+  color: #6366f1;
+}
+
+[data-theme="light"] .terminal-prompt-arrow {
+  color: #f97316;
+}
+
+[data-theme="light"] .terminal-line.command-line {
+  color: #0f172a;
+}
+
+[data-theme="light"] .terminal-response {
+  color: #475569;
+}
+
+[data-theme="light"] .terminal-response.error {
+  color: #dc2626;
+}
+
+[data-theme="light"] .terminal-response.success {
+  color: #059669;
+}
+
+[data-theme="light"] .terminal-header {
+  background-color: rgba(15, 23, 42, 0.04);
+}
+
+[data-theme="light"] .terminal-title {
+  color: #64748b;
+}
+
+[data-theme="light"] .terminal-status {
+  color: #94a3b8;
+}
+
+[data-theme="light"] .terminal-input {
+  color: #0f172a;
+}
